@@ -196,7 +196,7 @@ resource "aws_instance" "pri_bastion" {
   vpc_security_group_ids      = [aws_security_group.sg["bastion"].id]
   # 추후에 global에서 가져와서 주입하는 형식으로 수정 필요.
   # iam_instance_profile        = aws_iam_instance_profile.ssm_instance_profile.name
-  iam_instance_profile        = var.ssm_instance_profile_name_from_global
+  # iam_instance_profile        = var.ssm_instance_profile_name_from_global
   # key_name                    = aws_key_pair.pub_key.key_name
 
   tags = {
