@@ -26,6 +26,10 @@ seoul_subnets = {
     cidr = "10.10.60.0/24"
     az   = "ap-northeast-2c"
   }
+  "pri-c-7" = {
+    cidr = "10.10.70.0/24"
+    az   = "ap-northeast-2c"
+  }
 }
 seoul_nat_gw_azs = {
   "ap-northeast-2a" = "a",
